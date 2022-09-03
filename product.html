@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/product.css" rel="stylesheet">
+    <style>
+    .maincontainer {
+        position:relative;
+        width:150px;
+        height:150px;
+      
+    }
+    .thecard {
+        position:absolute;
+        transform-style: preserve-3d;
+        transition:all 0.5s ease;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0 0 10px #4a4d4f;
+        border-radius:40px ;
+        text-align: center !important;
+    }
+    .thecard:hover {
+        transform: rotateY(180deg);
+    }
+    .thefront {
+        position:absolute;
+        width:100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color:coral;
+        border-radius:40px ;
+        color: bisque;
+    }
+    .theback {
+        position:absolute;
+        width:100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: transparent;
+        transform: rotateY(180deg);
+        border-radius:40px ;
+        color:rgb(5, 5, 5);
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    
+
+    <div class="maincontainer">
+        <div class="thecard">
+            <div class="thefront">
+                <div style=" font-size: 27px; text-align: center; margin-top:10px; font-weight: 1000;">Want <br> a<br>free <br>delivery</div>
+            </div>
+                <div class="theback">
+                    <p style=" text-align: center; margin-top: 55px; font-weight: 1000;"> ASV121</p>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@import 'nav.css';
+@import 'footer.css';
+
+.wrapper {
+    display :flex;
+}
+.card{
+    background: rgb(249, 239, 227);
+    width: 300px;
+    height: 500px;
+    margin: 35px;
+    box-shadow: 0 0 5PX #6f7172;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center !important;
+}
+.card-description {
+    color:grey;
+}
+.card-description button {
+    background-color: gold;
+    font-size: large;
+}
+.card-description p {
+    font-size:x-large ;
+}
