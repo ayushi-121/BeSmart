@@ -1,0 +1,117 @@
+@import 'nav.css';
+@import 'footer.css';
+
+.maincontainer {
+    position:relative;
+    width:150px;
+    height:150px;
+    display: flex;
+}
+.maincontainer1 {
+    position:relative;
+    width:150px;
+    height:200px;
+    display: flex;
+}
+.thecard {
+    position:absolute;
+    transform-style: preserve-3d;
+    transition:all 0.5s ease;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px #041927;
+    border-radius:40px ;
+    text-align: center !important;
+    
+    margin-left:1200px;
+    display: flex;
+}
+.thecard1 {
+    position:absolute;
+    transform-style: preserve-3d;
+    transition:all 0.5s ease;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px #4a4d4f;
+    border-radius:40px ;
+    text-align: center !important;
+    margin-left: 700px;
+}
+.thecard2 {
+    position:absolute;
+    transform-style: preserve-3d;
+    transition:all 0.5s ease;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px #4a4d4f;
+    border-radius:40px ;
+    text-align: center !important;
+    margin-left: 950px;
+}
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+.thecard1:hover {
+    transform: rotateY(180deg);
+}
+.thecard2:hover {
+    transform: rotateY(180deg);
+}
+.thefront {
+    position:absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color:#71093d;
+    border-radius:40px ;
+    color:white;
+}
+.theback {
+    position:absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: transparent;
+    transform: rotateY(180deg);
+    border-radius:40px ;
+    color:rgb(5, 5, 5);
+    font-size: 30px;
+}
+.items{
+    background:transparent;
+    width: 200px;
+    height: 240px;
+    box-shadow: 0 0 20PX #71093d;
+    border-radius:10px ;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center !important;
+}
+.items:hover{
+    background-color: aliceblue;
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+.items1{
+    background:transparent;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 5PX #0a0408;
+    border-radius:40px ;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center !important;
+}
+.items1:hover {
+    border: 1px solid white;
+}
+.product-brand {
+    color:#4a4d4f;
+}
+.product-category {
+    color:#4a4d4f;
+    font-weight: 900px;
+}

@@ -1,0 +1,17 @@
+touch gitignore
+git init 
+git add
+git add .
+git commit -m "Initial Commit"
+git status       #just to see
+$ ssh-keygen -t rsa -b 4096 -C "sayushi0701@gmail.com"      #ssh key gen link 
+tail <path to id_rsa.pub>     #add this key to Github account
+git remote add origin < git@github.com:ayushi-121/BeSmart.git >
+git push origin master 
+
+how to update project wih more files- 
+git add .
+git commit -m "Added cheatsheet"
+git push origin master 
+
+

@@ -1,0 +1,59 @@
+@import 'nav.css';
+@import 'footer.css';
+body {
+    background-color: thistle;
+}
+.wrapper {
+    display :flex;
+}
+.card{
+    background:transparent;
+    width: 300px;
+    height: 510px;
+    margin: 40px;
+    box-shadow: 0 0 5PX #6f7172;
+    border-radius:10px ;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center !important;
+}
+
+.card::before{
+    transition: 0.5s ease-in;
+}
+.card::after{
+    transition: 0.5s ease-in;
+}
+.card-description h2{
+    color:grey;
+    margin-bottom: 25px;
+    font-size:xx-large ;
+}
+.card-description button {
+    background-color:gold;
+    font-size: larger;
+    border-radius: 6px;
+}
+.card-description p {
+    font-size:x-large ;
+    margin-bottom: 10px;
+}
+.discount-tag{
+
+    background: transparent;
+border: 2px solid transparent;
+}
+.card-image {
+
+}
+/* HOVER EFFECT */
+.card-description button:hover {
+    background-color:aliceblue;
+    font-size:x-large;
+}
+.card-description h2:hover {
+    color:darkred;
+
+}
+ 
